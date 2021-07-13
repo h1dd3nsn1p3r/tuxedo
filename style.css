@@ -1,0 +1,146 @@
+/*
+Theme Name: Tuxedo
+Theme URI: https://github.com/h1dd3nsn1p3r/tuxedo
+Author: Themebeez
+Author URI: https://themebeez.com/
+Description: A Simple Experimental Full Site Editing (FSE) WordPress Theme.
+Requires at least: 5.6
+Tested up to: 5.8
+Requires PHP: 7.0.0
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tuxedo
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, rtl-language-support, sticky-post, threaded-comments, blog
+
+Tuxedo WordPress Theme, (C) 2021 themebeez.com
+Tuxedo is distributed under the terms of the GNU GPL v2.0 or later.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+:root {
+
+    /* define vars for typography */
+
+    --tux-base-font-family: 'Inter', Sans Serif;
+    --tux-base-font-size: 16px;
+    --tux-base-letter-spacing: 0;
+    --tux-base-line-height: 1.5em;
+
+    --tux-heading-font-family: 'Comfortaa', cursive;
+    --tux-heading-letter-spacing: 0;
+    --tux-heading-line-height: 1.2em;
+
+    --tux-code-font-family: 'Inter', Sans Serif;
+    --tux-quote-font-family: 'Inter', Sans Serif;
+
+    /* define vars for colors */
+
+    --tux-primary-color: #333333;
+    --tux-secondary-color: #0B84EE;
+    --tux-trinary-color: #2CC92C;
+}
+
+body {
+
+    font-family: var(--tux-base-font-family);
+    font-size: var(--tux-base-font-size);
+    letter-spacing: var(--tux-base-letter-spacing);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: var(--tux-heading-font-family);
+    line-height: var(--tux-heading-line-height);
+    letter-spacing: var(--tux-heading-letter-spacing);
+}
+
+a:focus {
+
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: currentColor;
+}
+
+code {
+
+
+}
+
+em {
+
+
+}
+
+.wp-block-site-title > a {
+
+    text-decoration: none;
+}
+
+.wp-block-site-title {
+
+    margin-bottom: 10px;
+}
+
+.wp-block-site-tagline {
+
+    font-size: calc( var(--tux-base-font-size) - 1px );
+    margin-top: 5px;
+}
+
+.wp-block-post-title > a {
+
+    text-decoration: none;
+}
+
+wp-block-query-pagination {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wp-block-query-pagination-numbers {
+
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.wp-block-query-pagination-numbers .page-numbers {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    color: var(--tux-primary-color);
+    border: 2px solid var(--tux-secondary-color);
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.wp-block-query-pagination-numbers .page-numbers.current {
+
+    color: var(--tux-secondary-color);
+}
+
+.wp-block-query-pagination .wp-block-query-pagination-next,
+.wp-block-query-pagination .wp-block-query-pagination-prev {
+
+    
+}
